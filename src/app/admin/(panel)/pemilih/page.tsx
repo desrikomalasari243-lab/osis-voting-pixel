@@ -232,7 +232,7 @@ export default function DaftarPemilihPage() {
               />
             </div>
             <div className="flex gap-3">
-              <Select value={filterClass} onValueChange={setFilterClass}>
+              <Select value={filterClass} onValueChange={(value) => setFilterClass(value || "all")}>
                 <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Filter Kelas" />
                 </SelectTrigger>
@@ -246,7 +246,7 @@ export default function DaftarPemilihPage() {
                 </SelectContent>
               </Select>
 
-              <Select value={filterStatus} onValueChange={setFilterStatus}>
+              <Select value={filterStatus} onValueChange={(value) => setFilterStatus(value || "all")}>
                 <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Filter Status" />
                 </SelectTrigger>

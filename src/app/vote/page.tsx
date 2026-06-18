@@ -362,15 +362,13 @@ export default function VotePage() {
           </div>
  
           {/* Warning Etika - Dibungkus asChild agar bisa dikustomisasi secara presisi */}
-          <AlertDialogDescription asChild>
-            <div className="bg-blue-50/50 rounded-lg p-4 border border-blue-100 flex gap-2 items-start">
-              <Gavel className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
-              <span className="text-xs text-slate-600 leading-relaxed block">
-                Dengan menekan tombol konfirmasi, Anda menggunakan hak suara
-                Anda secara sah. Pilihan tidak dapat diubah setelah disubmit.
-              </span>
-            </div>
-          </AlertDialogDescription>
+<AlertDialogDescription className="bg-blue-50/50 rounded-lg p-4 border border-blue-100 flex gap-2 items-start">
+  <Gavel className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+  <span className="text-xs text-slate-600 leading-relaxed block">
+    Dengan menekan tombol konfirmasi, Anda menggunakan hak suara
+    Anda secara sah. Pilihan tidak dapat diubah setelah disubmit.
+  </span>
+</AlertDialogDescription>
  
           {/* Actions */}
           <AlertDialogFooter className="flex-col gap-3 sm:flex-col sm:space-x-0 mt-2">
